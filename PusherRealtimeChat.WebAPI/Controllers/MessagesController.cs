@@ -20,12 +20,12 @@ namespace PusherRealtimeChat.WebAPI.Controllers
             {
                 new ChatMessage
                 {
-                    AuthorName = "Chris",
+                    authorTwitterHandle = "ChrisDallaSanta",
                     Text = "Hello there."
                 },
                 new ChatMessage
                 {
-                    AuthorName = "Kristin",
+                    authorTwitterHandle = "9ine6ix42330261",
                     Text = "Hello back."
                 }
             };
@@ -62,7 +62,7 @@ namespace PusherRealtimeChat.WebAPI.Controllers
                 eventName: "new_message",
                 data: new
                 {
-                    AuthorName = message.AuthorName,
+                    authorTwitterHandle = message.authorTwitterHandle,
                     Text = message.Text
                 });
 

@@ -12,6 +12,6 @@ namespace PusherRealtimeChat.WebAPI.Models
         public string Text { get; set; }
 
         [Required]
-        public string AuthorName { get; set; }
+        public string authorTwitterHandle { get; set; }
     }
 }
